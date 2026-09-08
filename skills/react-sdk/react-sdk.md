@@ -1,5 +1,7 @@
 # React SDK
 
+> **Protocol version: V1.** This file documents the production V1 integration — the only version deployed on mainnet. The V2 API, React SDK and Blocks surfaces are **not** documented in this skill yet; for the contract-level differences between V1 and V2 see [constitution.md](../../constitution.md).
+
 The Trustless Work React SDK (`@trustless-work/escrow`) provides custom hooks for integrating escrow functionality into React/Next.js applications. It uses Axios for HTTP requests.
 
 > **See [hooks-reference.md](hooks-reference.md) for complete detailed documentation of all hooks with examples.**

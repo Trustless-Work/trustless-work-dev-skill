@@ -1,5 +1,7 @@
 # Blocks Components
 
+> **Protocol version: V1.** This file documents the production V1 integration — the only version deployed on mainnet. The V2 API, React SDK and Blocks surfaces are **not** documented in this skill yet; for the contract-level differences between V1 and V2 see [constitution.md](../../constitution.md).
+
 Pre-built UI components for escrow management interfaces. All components can be installed via CLI and are fully customizable.
 
 ## Installation

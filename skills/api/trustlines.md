@@ -1,5 +1,7 @@
 # Trustlines
 
+> **Applies to both protocol versions.** Trustlines are a Stellar network requirement, independent of the Trustless Work protocol version.
+
 Trustlines are required for accounts to hold and transact with non-native assets (anything other than XLM) on the Stellar network.
 
 ## What is a Trustline?
