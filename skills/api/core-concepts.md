@@ -1,5 +1,7 @@
 # Core Concepts
 
+> **Protocol version: V1.** This file documents the production V1 integration — the only version deployed on mainnet. The V2 API, React SDK and Blocks surfaces are **not** documented in this skill yet; for the contract-level differences between V1 and V2 see [constitution.md](../../constitution.md).
+
 ## Overview
 
 Trustless Work is **Escrow-as-a-Service (EaaS)** for stablecoin escrow. It enables trust-minimized conditional payments on Stellar blockchain using Soroban smart contracts. Build **non-custodial** flows with milestones, approvals, and disputes. Ideal for freelancing, marketplaces, grant disbursements, and any milestone-based payment flow.

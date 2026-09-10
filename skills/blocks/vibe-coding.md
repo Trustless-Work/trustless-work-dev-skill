@@ -1,5 +1,7 @@
 # Vibe Coding Guide
 
+> **Protocol version: V1.** This file documents the production V1 integration — the only version deployed on mainnet. The V2 API, React SDK and Blocks surfaces are **not** documented in this skill yet; for the contract-level differences between V1 and V2 see [constitution.md](../../constitution.md).
+
 Single-file AI context guide for Trustless Work Escrow Blocks with Next.js. Built for agent workflows.
 
 {% hint style="info" %}

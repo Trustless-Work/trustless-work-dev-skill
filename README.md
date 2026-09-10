@@ -2,6 +2,8 @@
 
 # Trustless Work Development Skill
 
+> **Protocol version: V1.** This file documents the production V1 integration — the only version deployed on mainnet. The V2 API, React SDK and Blocks surfaces are **not** documented in this skill yet; for the contract-level differences between V1 and V2 see [constitution.md](constitution.md).
+
 [View on skills.sh](https://www.skills.sh/trustless-work/trustlesswork-skill)
 
 A comprehensive AI skill for developing with the Trustless Work platform - enabling escrow contracts, milestone-based payments, and dispute resolution on the Stellar blockchain.

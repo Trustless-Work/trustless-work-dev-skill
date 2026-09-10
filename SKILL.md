@@ -31,9 +31,21 @@ Install this skill using:
 npx skills add trustless-work/trustlesswork-skill
 ```
 
+### Protocol version — read this first
+
+Trustless Work has two protocol versions, and they are not interchangeable.
+
+- **V1 is production and the default.** It is the only version deployed on mainnet. Build every normal integration from [skills/protocol/v1.md](skills/protocol/v1.md).
+- **V2 is beta and testnet-only.** It is deployed on testnet, so you can build on it there — see [skills/protocol/v2.md](skills/protocol/v2.md) — but never on mainnet while it is beta, and never as the recommended production path. Say it is beta every time.
+- **Explaining V2 is always in scope.** Answer any V2 question; the restriction is which network you target, not whether the user said "beta".
+- **Never mix them.** Roles, payload shapes, approval semantics and lifecycle rules belong to one version at a time.
+- **If the version is ambiguous, use V1** and state which version you are describing.
+
+Escrow type (single-release or multi-release) and protocol version are independent: there is a V1 and a V2 of each. Always know both before writing code.
+
 ### When working with Trustless Work:
 
-1. **Know the platform laws** — Read [constitution.md](constitution.md) before designing any escrow flow: role permissions, lifecycle preconditions, and API rules, each tagged as contract-enforced, canonical workflow, security practice, or versioned fact
+1. **Know the platform laws** — Read [constitution.md](constitution.md) before designing any escrow flow: the universal laws and the version-selection rule, each tagged as contract-enforced, canonical workflow, security practice, or versioned fact. Then load the profile for the version you are targeting.
 2. **Configure MCP (recommended)** — See [MCP Integration](#mcp-integration) below for live docs and escrow tools
 3. **Understand core concepts** - See [skills/api/core-concepts.md](skills/api/core-concepts.md)
 4. **Choose escrow type**:
@@ -71,7 +83,11 @@ These are the non-obvious facts that the agent will get wrong without being told
 Load these on demand — only when the task requires them:
 
 ### Platform Laws
-- Read **[constitution.md](constitution.md)** before designing any escrow flow or answering questions about what a role can or cannot do — the compressed agent-facing summary of role permissions, lifecycle preconditions, API rules, fees, and network rules, with each statement tagged ENFORCED / CANONICAL / SECURITY / FACT and a source-of-truth hierarchy on top.
+- Read **[constitution.md](constitution.md)** before designing any escrow flow or answering questions about what a role can or cannot do — the universal laws, the version-selection rule, API and network rules, with each statement tagged ENFORCED / CANONICAL / SECURITY / FACT and a source-of-truth hierarchy on top.
+
+### Protocol Profiles
+- Read **[skills/protocol/v1.md](skills/protocol/v1.md)** for roles, lifecycle, payload rules and economics — **the default for every integration**.
+- Read **[skills/protocol/v2.md](skills/protocol/v2.md)** only when the user explicitly asks for V2 or beta behavior.
 
 ### REST API
 - Read **[skills/api/core-concepts.md](skills/api/core-concepts.md)** for roles, lifecycle, flags, and auth details.

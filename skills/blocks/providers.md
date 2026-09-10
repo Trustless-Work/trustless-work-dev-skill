@@ -1,5 +1,7 @@
 # Blocks Providers
 
+> **Protocol version: V1.** This file documents the production V1 integration — the only version deployed on mainnet. The V2 API, React SDK and Blocks surfaces are **not** documented in this skill yet; for the contract-level differences between V1 and V2 see [constitution.md](../../constitution.md).
+
 Providers for escrow state, wallet context, dialogs, and amount formatting. **Provider order is critical** — do not reorder.
 
 ## Required Provider Stack
